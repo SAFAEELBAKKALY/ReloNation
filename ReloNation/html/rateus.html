@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Reviews</title>
+    <link rel="stylesheet" href="../css/rateus.css">
+</head>
+<body>
+  
+        <h2>give us your review </h2>
+        <form action="../php/rateus.php" method="post">
+            <input type="text" placeholder="name" required name="name">
+            <div class="input-stars-container">
+                <input type="text" id="rating-display" placeholder="your rating" readonly required name="rating">
+                <div class="stars">
+                    <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+                    <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+                    <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+                    <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+                    <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+                </div>
+            </div>
+            <input type="text" placeholder="Title of your Review" required name="title">
+            <textarea placeholder="tell people your review..." required name="description"></textarea>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+
+    <script>
+        document.querySelectorAll('.stars input').forEach((star) => {
+            star.addEventListener('change', () => {
+                document.getElementById('rating-display').value = star.value + " étoiles";
+            });
+        });
+    </script>
+</body>
+</html>

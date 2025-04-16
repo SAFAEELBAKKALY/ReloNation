@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #FFA500;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar h2 {
+    color: white;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.sidebar a:hover {
+    background-color: #20B2AA;
+    color: #fff;
+    padding-left: 5px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.widget {
+    background-color: #20B2AA;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+
+.dashboard {
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    height: min-content;
+
+}
+
+.dashboard .widget {
+    background-color: #20B2AA;
+    color: white;
+    padding: 20px;
+    width: 500px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th{
+    background-color: #20B2AA;
+    color: #fff;
+}
+  
+td, th {
+border: 1px solid #dddddd;
+text-align: left;
+padding: 8px;
+}
+
+video{
+    width: 300px;
+}

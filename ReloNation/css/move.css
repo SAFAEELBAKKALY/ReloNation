@@ -1,0 +1,76 @@
+body {
+  background-color: teal;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+  width: 350px;
+}
+
+input[type="text"], input[type="date"], input[type="tel"], input[type="email"] {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #00A19D;
+  border-radius: 100px;
+}
+
+button {
+  color: #00A19D;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn { 
+  color: white;
+  background-color: #ff9800;
+  width: 50%;
+}
+
+.button-container {
+  text-align: center;
+}
+
+#videoUpload {
+  display: none;
+}
+
+#uploadButton {
+  padding: 10px;
+  border-radius: 100px;
+  background-color: white;
+  color: #00A19D;
+  border: 1px solid #00A19D;
+  cursor: pointer;
+  width: 95%;
+  margin: 10px 0;
+  display: inline-block;
+  text-align: center;
+}
+h1 {
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.text-container {
+  color: white;
+}  

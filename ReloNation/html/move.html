@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/move.css">
+</head>
+<body>
+    <div class="flex-container">
+        <div class="text-container">
+          <h1>Need moving or cleaning services? We're here to help!</h1>
+        </div>
+        <div class="container">
+            <form enctype="multipart/form-data" id="serviceForm">
+                <div class="result"></div>
+                <input type="text" name="name" placeholder="First And Second Name" >
+                <input type="email" name="email" placeholder="Email" >
+                <input type="tel" name="phone" placeholder="Phone Number" >
+                <input type="date" name="date" placeholder="Move Date" >
+                <input type="file" id="videoUpload" name="videoUpload" >
+                <label for="videoUpload" id="uploadButton">Upload Video</label>
+                <input type="text" name="from" id="from" placeholder="Moving From">
+                <input type="text" name="to" id="to" placeholder="Moving To">
+                <input type="text" name="city" id="city" placeholder="City">
+                <div class="button-container">
+                    <button class="btn" type="submit" name="submit">Get Moving!</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+    <script src="../js/move.js"></script>
+</body>
+</html>

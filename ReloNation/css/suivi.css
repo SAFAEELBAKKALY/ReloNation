@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #FA9E15;
+    margin-bottom: 20px;
+}
+
+.status {
+    margin-bottom: 20px;
+}
+
+#status {
+    font-size: 18px;
+    color: #6C757D;
+}
+
+.assistance {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.assistance p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.assistance a {
+    color: #00A19D;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.assistance a:hover {
+    text-decoration: underline;
+}
+
+#logoutButton {
+    background-color: #FA9E15;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#logoutButton a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#logoutButton:hover {
+    background-color: #e08714;
+}

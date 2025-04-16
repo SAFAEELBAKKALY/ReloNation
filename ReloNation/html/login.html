@@ -1,0 +1,50 @@
+<?php session_start();?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+    <div class="section1" id="section1">
+        <div class="img1">
+            <img src="../imgs/signinup.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="section2" id="section2">
+        <div class="header">
+            <img src="../imgs/ombre-de-lutilisateur-masculin (1).png" alt="">
+            <h2>Welcome back to Relonation !</h2>
+        </div>
+        <form action="" method="POST">
+            <div class="champ" id="reponce"></div>
+            <div class="champ">
+                <label for="email">Enter your email</label>
+                <img src="../imgs/enveloppe.png" alt="">
+                <input type="email" name="email" required >
+            </div>
+            <div class="champ">
+                <label for="password">Enter your password</label>
+                <img src="../imgs/cadenas.png" alt="">
+                <input type="password" name="password" required>
+            </div>
+            <div class="lien">
+                <a href="../html/sendEmail.html">Forgot Password?</a>
+            </div>
+            <div class="btn">
+                <button name="login" type="submit" id="btn">Sign In</button>
+            </div>
+            <div class="header">
+                <p>New here?<a href="../html/signUp.html"> Sign Up</a></p>
+            </div>
+        </form>
+    </div>
+   
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

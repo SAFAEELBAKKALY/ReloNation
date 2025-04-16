@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif; /* Définit la police de caractères */
+  background-color: #ffffff; /* Couleur de fond de la page */
+  margin: 0; /* Retire les marges par défaut */
+  height: 100vh; /* Hauteur de la fenêtre d'affichage */
+  display: flex; /* Utilisation de flexbox pour le positionnement */
+  justify-content: center; /* Centrage horizontal du conteneur */
+  align-items: center; /* Centrage vertical du conteneur */
+}
+
+.container {
+  display: flex; /* Utilisation de flexbox pour diviser la page */
+   width: 90%; /* Largeur du conteneur */
+   max-width: 1000px; /* Largeur maximale du conteneur */
+   /*height: 80%; /* Hauteur du conteneur */
+   background-color:#ffffff; /* Couleur de fond du conteneur */
+   border-radius: 10px; /* Angles arrondis du conteneur */
+   overflow: hidden; /* Contenu caché qui dépasse les limites du conteneur */
+   border: none;
+   margin: 0 auto;
+  
+  }
+.left-section {
+  width: 50%; /* Largeur de la section gauche */
+  position: relative;
+  border-right: none;
+  /*margin: 0;*/
+  background-color: #ffffff;
+}
+
+.left-section .left-image {
+  position: absolute; /* Positionnement absolu pour couvrir toute la section */
+    top: 0;
+    left: 0;
+    width: 100%; /* L'image couvre toute la largeur de la section */
+    height: 100%; /* L'image couvre toute la hauteur de la section */
+    object-fit: contain; /* Ajuste l'image pour couvrir toute la section sans déformation */
+}
+
+
+.right-section {
+  width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Utilisation de flexbox en colonne */
+    align-items: flex-start; /* Aligne les éléments du formulaire en haut */
+    justify-content: flex-start;
+    background-color: #ffffff;
+    border-left: none;
+    margin: 0;
+}
+
+.contact-form {
+  width: 100%; /* Largeur du formulaire */
+  max-width: 400px; /* Largeur maximale du formulaire */
+}
+
+.contact-form h2 {
+  font-family: 'Maitree', sans-serif; /* Applique la police Maitree */
+  font-size: 24px; /* Taille de la police */
+  font-weight: 700; /* Poids de la police à 700 (gras) */
+  line-height: 39.6px; /* Hauteur de ligne */
+  text-align: center; /* Aligne le texte au centre */
+  color: #ffa500; /* Couleur du texte en orange */
+  margin-bottom: 20px; /* Espace en bas du titre */
+}
+
+.form-group, .reponce input {
+  display: flex; /* Utilisation de flexbox pour aligner les éléments */
+  align-items: center; /* Alignement vertical centré des éléments */
+  margin-bottom: 20px; /* Espacement en bas des groupes de formulaire */
+  border: 1px solid #ddd; /* Bordure des groupes de formulaire */
+  border-radius: 10px; /* Angles arrondis des groupes de formulaire */
+  padding: 10px; /* Espacement interne des groupes de formulaire */
+  background-color: #f9f9f9; /* Couleur de fond des groupes de formulaire */
+  width: 100%; /* Largeur des groupes de formulaire */
+}
+
+.reponce input{
+  background-color: transparent;
+  border: none;
+}
+
+.form-group .icon {
+  margin-right: 10px; /* Espacement à droite des icônes */
+  width: 24px; /* Largeur des icônes */
+  height: 24px; /* Hauteur des icônes */
+}
+
+.form-group input, .form-group textarea, .reponce input {
+  border: none; /* Retire les bordures des champs */
+  outline: none; /* Retire les contours des champs */
+  width: 100%; /* Largeur des champs */
+  background: none; /* Retire la couleur de fond des champs */
+  padding: 10px; /* Espacement interne des champs */
+
+}
+
+textarea {
+  resize: none; /* Empêche le redimensionnement du champ texte */
+  height: 150px; /* Hauteur du champ texte */
+}
+
+.button-container {
+  text-align: center; /* Center align its children */
+}
+
+.btn {
+  display: inline-block; 
+  background-color: #f39c12; 
+  color: #fff; 
+  border: none; 
+  padding: 15px 20px; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+  width: 200px; 
+  text-align: center; 
+  margin: 20px auto; 
+}
+
+
+.btn:hover {
+  background-color: #e67e22; /* Couleur de fond du bouton au survol */
+}
